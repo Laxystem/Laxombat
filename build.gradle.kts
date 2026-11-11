@@ -4,7 +4,7 @@ plugins {
     `maven-publish`
     base
 
-    id("dev.architectury.loom") version "1.17-SNAPSHOT" apply false
+    id("dev.architectury.loom-no-remap") version "1.17-SNAPSHOT" apply false
     id("architectury-plugin") version "3.5-SNAPSHOT"
     id("com.gradleup.shadow") version "9.4.3" apply false
 
@@ -33,14 +33,14 @@ allprojects {
 
     java {
         toolchain {
-            languageVersion = JavaLanguageVersion.of(21)
+            languageVersion = JavaLanguageVersion.of(25)
         }
         withSourcesJar()
     }
 }
 
 subprojects {
-    apply(plugin = "dev.architectury.loom")
+    apply(plugin = "dev.architectury.loom-no-remap")
 
     val loom = project.extensions.getByName<LoomGradleExtensionAPI>("loom")
 
@@ -48,9 +48,6 @@ subprojects {
     dependencies {
         "minecraft"("com.mojang:minecraft:${project.property("minecraft_version")}")
         // The following line declares the mojmap mappings, you may use other mappings as well
-        "mappings"(
-            loom.officialMojangMappings()
-        )
         // The following line declares the yarn mappings you may select this one as well.
         // "mappings"("net.fabricmc:yarn:1.18.2+build.3:v2")
     }

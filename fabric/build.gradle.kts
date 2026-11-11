@@ -26,29 +26,28 @@ val shadowBundle: Configuration by configurations.creating {
 val developmentFabric: Configuration by configurations.getting
 
 configurations {
-
     compileOnly.configure { extendsFrom(common) }
     runtimeOnly.configure { extendsFrom(common) }
     developmentFabric.extendsFrom(common)
 }
 
 dependencies {
-    modImplementation("net.fabricmc:fabric-loader:${rootProject.property("fabric_loader_version").toString()}")
+    implementation("net.fabricmc:fabric-loader:${rootProject.property("fabric_loader_version").toString()}")
 
     // Fabric API. This is technically optional, but you probably want it anyway.
-    modImplementation("net.fabricmc.fabric-api:fabric-api:${rootProject.property("fabric_api_version").toString()}")
+    implementation("net.fabricmc.fabric-api:fabric-api:${rootProject.property("fabric_api_version").toString()}")
 
     // Architectury API. This is optional, and you can comment it out if you don't need it.
-    modImplementation("dev.architectury:architectury-fabric:${rootProject.property("architectury_api_version").toString()}")
+    implementation("dev.architectury:architectury-fabric:${rootProject.property("architectury_api_version").toString()}")
 
-    common(project(":common", "namedElements")) {
+    common(project(":common")) {
         isTransitive = false
     }
     shadowBundle(project(":common", "transformProductionFabric")){
         isTransitive = false
     }
 
-    modImplementation("net.fabricmc:fabric-language-kotlin:${rootProject.property("fabric_language_kotlin_version")}")
+    implementation("net.fabricmc:fabric-language-kotlin:${rootProject.property("fabric_language_kotlin_version")}")
 }
 
 tasks.processResources {
@@ -102,8 +101,4 @@ tasks.processResources {
 tasks.shadowJar {
     configurations = listOf(project.configurations.named("shadowBundle").get())
     archiveClassifier.set("dev-shadow")
-}
-
-tasks.remapJar {
-    inputFile.set(tasks.shadowJar.flatMap { it.archiveFile })
 }

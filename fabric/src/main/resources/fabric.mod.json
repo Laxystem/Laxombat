@@ -3,38 +3,37 @@
   "id": "${mod_id}",
   "version": "${version}",
   "name": "${mod_name}",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "description": "Community rendition of a ninth combat snapshot",
   "authors": [
-    "Me!"
+    "Laxystem"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "sources": "https://github.com/Laxystem/Laxombat"
   },
-  "license": "CC0-1.0",
-  "icon": "assets/example_mod/icon.png",
+  "license": "MPL-2.0",
+  "icon": "assets/laxombat/icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [
       {
         "adapter": "kotlin",
-        "value": "com.example.fabric.ExampleModFabric"
+        "value": "quest.laxla.laxombat.fabric.LaxombatFabric"
       }
     ],
     "client": [
       {
         "adapter": "kotlin",
-        "value": "com.example.fabric.client.ExampleModFabricClient"
+        "value": "quest.laxla.laxombat.fabric.client.LaxombatFabricClient"
       }
     ]
   },
   "mixins": [
-    "example_mod.mixins.json"
+    "laxombat.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=${fabric_loader_version}",
     "minecraft": "~${minecraft_version}",
-    "java": ">=21",
+    "java": ">=25",
     "architectury": ">=${architectury}",
     "fabric-api": "*",
     "fabric-language-kotlin": ">=${flk}"

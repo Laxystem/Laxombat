@@ -1,8 +1,8 @@
-package com.example.fabric.client
+package quest.laxla.laxombat.fabric.client
 
 import net.fabricmc.api.ClientModInitializer
 
-class ExampleModFabricClient: ClientModInitializer {
+class LaxombatFabricClient: ClientModInitializer {
     override fun onInitializeClient() {
 
     }

@@ -7,7 +7,7 @@ pluginManagement {
     }
 }
 
-rootProject.name = "example_mod"
+rootProject.name = "laxombat"
 
 include("common")
 include("fabric")

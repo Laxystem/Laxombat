@@ -42,9 +42,9 @@ dependencies {
     neoForge("net.neoforged:neoforge:${rootProject.property("neoforge_version")}")
 
     // Architectury API. This is optional, and you can comment it out if you don't need it.
-    modImplementation("dev.architectury:architectury-neoforge:${rootProject.property("architectury_api_version").toString()}")
+    implementation("dev.architectury:architectury-neoforge:${rootProject.property("architectury_api_version").toString()}")
 
-    common(project(":common", "namedElements")) {
+    common(project(":common")) {
         isTransitive = false
     }
 
@@ -75,8 +75,4 @@ tasks.processResources {
 tasks.shadowJar {
     configurations = listOf(project.configurations.named("shadowBundle").get())
     archiveClassifier.set("dev-shadow")
-}
-
-tasks.remapJar {
-    inputFile.set(tasks.shadowJar.flatMap { it.archiveFile })
 }
