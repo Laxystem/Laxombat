@@ -1,0 +1,30 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "laxombat:block/rose_gold_pillar",
+      "x": 180
+    },
+    "facing=east": {
+      "model": "laxombat:block/rose_gold_pillar",
+      "x": 90,
+      "y": 90
+    },
+    "facing=north": {
+      "model": "laxombat:block/rose_gold_pillar",
+      "x": 90
+    },
+    "facing=south": {
+      "model": "laxombat:block/rose_gold_pillar",
+      "x": 90,
+      "y": 180
+    },
+    "facing=up": {
+      "model": "laxombat:block/rose_gold_pillar"
+    },
+    "facing=west": {
+      "model": "laxombat:block/rose_gold_pillar",
+      "x": 90,
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "item.laxombat.rose_gold_upgrade_smithing_template": "Rose Gold Upgrade",
+  "item.laxombat.rose_gold_upgrade_smithing_template.applies_to": "Gold Equipment",
+  "item.laxombat.rose_gold_upgrade_smithing_template.ingredients": "Copper Ingot",
+  "item.laxombat.rose_gold_upgrade_smithing_template.base_slot_description": "Add golden armor, weapons, or tool",
+  "item.laxombat.rose_gold_upgrade_smithing_template.additions_slot_description": "Add Copper Ingot",
+  "item.laxombat.rose_gold_shovel": "Rose-Golden Shovel",
+  "item.laxombat.rose_gold_pickaxe": "Rose-Golden Pickaxe",
+  "item.laxombat.rose_gold_axe": "Rose-Golden Axe",
+  "item.laxombat.rose_gold_hoe": "Rose-Golden Hoe",
+  "item.laxombat.rose_gold_sword": "Rose-Golden Sword",
+  "item.laxombat.rose_gold_helmet": "Rose-Golden Helmet",
+  "item.laxombat.rose_gold_chestplate": "Rose-Golden Chestplate",
+  "item.laxombat.rose_gold_leggings": "Rose-Golden Leggings",
+  "item.laxombat.rose_gold_boots": "Rose-Golden Boots"
+}

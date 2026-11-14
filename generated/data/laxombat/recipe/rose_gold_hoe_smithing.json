@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": "#minecraft:copper_tool_materials",
+  "base": "minecraft:golden_hoe",
+  "result": {
+    "id": "laxombat:rose_gold_hoe"
+  },
+  "template": "laxombat:rose_gold_upgrade_smithing_template"
+}

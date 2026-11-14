@@ -25,6 +25,12 @@
         "adapter": "kotlin",
         "value": "quest.laxla.laxombat.fabric.client.LaxombatFabricClient"
       }
+    ],
+    "fabric-datagen": [
+      {
+        "adapter": "kotlin",
+        "value": "quest.laxla.laxombat.datagen.LaxombatDataGenerator"
+      }
     ]
   },
   "mixins": [

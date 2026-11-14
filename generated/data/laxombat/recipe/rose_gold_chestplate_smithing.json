@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": "#minecraft:copper_tool_materials",
+  "base": "minecraft:golden_chestplate",
+  "result": {
+    "id": "laxombat:rose_gold_chestplate"
+  },
+  "template": "laxombat:rose_gold_upgrade_smithing_template"
+}

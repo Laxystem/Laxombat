@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": "#minecraft:copper_tool_materials",
+  "base": "minecraft:golden_helmet",
+  "result": {
+    "id": "laxombat:rose_gold_helmet"
+  },
+  "template": "laxombat:rose_gold_upgrade_smithing_template"
+}

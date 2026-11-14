@@ -1,5 +1,3 @@
-import org.jetbrains.kotlin.gradle.utils.extendsFrom
-
 plugins {
     id("com.gradleup.shadow")
 }
@@ -13,6 +11,14 @@ repositories {
 architectury {
     platformSetupLoomIde()
     fabric()
+}
+
+fabricApi {
+    configureDataGeneration {
+        client = true
+        addToResources = false
+        outputDirectory = rootProject.file("generated")
+    }
 }
 
 val common: Configuration by configurations.creating {

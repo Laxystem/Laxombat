@@ -3,9 +3,19 @@
   "package": "quest.laxla.laxombat.mixin",
   "compatibilityLevel": "JAVA_25",
   "minVersion": "0.8",
+  "mixinextras": {
+    "minVersion": "0.5.5"
+  },
   "client": [
   ],
   "mixins": [
+    "AttackRangeMixin",
+    "ConsumablesMixin",
+    "DataComponentMapBuilderMixin",
+    "FoodDataMixin",
+    "ItemPropertiesMixin",
+    "PlayerMixin",
+    "ToolMaterialMixin"
   ],
   "injectors": {
     "defaultRequire": 1

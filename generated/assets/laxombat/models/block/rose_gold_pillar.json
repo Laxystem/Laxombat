@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "laxombat:block/rose_gold_pillar_top",
+    "side": "laxombat:block/rose_gold_pillar_side"
+  }
+}

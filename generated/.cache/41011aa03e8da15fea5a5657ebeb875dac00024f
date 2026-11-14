@@ -1,0 +1,12 @@
+// 26.3	-999999999-01-01T00:00:00	Laxombat/Tags for minecraft:item
+a6115e73050f1b3f236bd8e52f03c9aca4f15325 data/c/tags/item/tools/melee_weapon.json
+22d50f55209c8c0f9d63f4f4b3ec3ad3e3aa474b data/laxombat/tags/item/items.json
+3f6a4987b3a72c2d41283d09a8c516810be554f1 data/minecraft/tags/item/axes.json
+d66b98e8123f91638a02ae55dfa7eb901672b397 data/minecraft/tags/item/chest_armor.json
+3b6c42a3903aead4e91e5b54e1d005cd1b8e0f68 data/minecraft/tags/item/foot_armor.json
+c797baa877b2c7d0cdabe22221e02ba526548f6d data/minecraft/tags/item/head_armor.json
+2013ab65906b550ba918d49f0c5e94db3d06a711 data/minecraft/tags/item/hoes.json
+cb64739964e392f6563b9e7c9f6beb1e98637e55 data/minecraft/tags/item/leg_armor.json
+e4f5a08f7d37c93c29eea7dcca7df0eba134ebe6 data/minecraft/tags/item/pickaxes.json
+6081d8008e01217482cd5855aa4e646139c21b65 data/minecraft/tags/item/shovels.json
+9d080c01b3cea378970ed05591d6fbf604261df4 data/minecraft/tags/item/swords.json
